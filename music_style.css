@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&family=Protest+Riot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Protest Riot', sans-serif ;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Protest Riot', sans-serif ;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(18, 18, 18);
+    font-family: 'Protest Riot', sans-serif ;
+}
+/*-------------------------------Navbar-------*/
+nav{
+    padding: 0 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    background-color: #101014;
+}
+
+nav a.logo{
+    font-size: 60px;
+    color: #0f2182;
+    font-weight: 600;
+    font-family: 'Protest Guerrilla', sans-serif;
+}
+
+nav .links a:not(:last-child){
+    margin-right: 20px;
+}
+
+nav .login button{
+    padding: 8px 14px;
+    border: none;
+    margin-right: 14px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+nav .login button.signup{
+    background-color: #000;
+    color: #fff;
+    border-radius: 8px;
+}
+
+nav .login button.login{
+    background-color:#fff;
+    color: #000;
+    border-radius: 8px;
+
+}
+
+nav .login button.login{
+    background-color: #e4e0e0;
+    color: #070707;
+    border-radius: 8px;
+}
+nav .links a:hover{
+    background-color: #304ffe;
+    color: #fff;
+    border-radius: 40px;
+    padding: 6px 10px;
+    transition: 0.3s;
+  }
+  /*---------------------------------------- Header-------------------------------------*/
+ header{
+    position: relative;
+    width: 95%;
+    height: 90%;
+    border: 1px solid white;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-left: 30px;
+    box-shadow: 0px 10px 25px -8px gray;
+ }
+
+ header::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height:100% ;
+    background-image: url("create/arijit back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    opacity: .9;
+ }
+
+ header::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height:100% ;
+    background:linear-gradient(180deg, transparent, #000) ;
+    z-index: -1;
+ }
+
+ header .left{
+    margin-left: 20px;
+    width: 700px;
+}
+
+header .left h1{
+    font-size: 80px;
+    color: #fff;
+}
+
+header .left h1 span{
+     color: #0f2182;
+}
+
+header .left p{
+    margin: 40px 0;
+    color: #0d0d0d;
+}
+
+header .left a{
+    display: flex;
+    align-items: center;
+    background: #165db9;
+    width: 200px;
+    padding: 8px;
+    border-radius: 60px;
+}
+
+header .left a i{
+    background-color: #060606;
+    font-size: 24px;
+    border-radius:50% ;
+    padding: 8px;
+
+}
+
+header .left a span{
+    color: #fff;
+    margin-left: 10px;
+}
+/*-------------------------music-------------------------------*/
+/*-------------------------------ARTIST-------------------------------------*/
+.artists h1 {
+    margin-bottom: 24px;
+  }
+  
+  .artist-container {
+    column-gap: 20px;
+  }
+  
+  .artist {
+    display: grid;
+    grid-auto-flow: dense;
+    align-items: center;
+    grid-template-rows: 8fr 2fr;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+  }
+  
+  .artist img {
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid rgba(169, 150, 253, 0.5);
+    width: 140px;
+    aspect-ratio: 1/1;
+    margin-bottom: 8px;
+    box-shadow: rgba(221, 221, 221, 0.3) 0px 6px 18px -3px,
+      rgba(221, 221, 221, 0.2) 0px -3px 0px inset;
+    transition: all 0.2s;
+  }
+  
+  .artist img:hover {
+    border: 4px solid rgba(169, 150, 253, 0.6);
+  }
+  
+  .artist p {
+    font-size: clamp(0.9rem, 3vw, 1rem);
+    font-weight: 500;
+    text-align: center;
+  }
+
+
+
+
+  /*----------------------------------Footer----------------------------------*/
+
+  footer{
+    background-color: #000;
+    color: #fff;
+    padding: 100px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+}
+
+footer h3{
+    font-size: 48px;
+}
+
+footer .right{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end ;
+    gap: 26px;
+}
+
+ footer .right .links{
+    display: flex;
+    gap: 30px;
+ }
+
+ footer .right .links a{
+    color: #989898;
+    transition: color 0.3s ease;
+ }
+
+ footer .right .links a:hover{
+    color: #fff;
+ }
+
+ footer .right .social{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+ }
+
+footer .right .social i{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+footer .right .social i:hover{
+    color: #304ffe;
+}
+
+footer .right p{
+    font-size: 13px;
+    color: #777;
+}
